@@ -207,7 +207,7 @@
       <div class="controls">
         <strong>Besturing</strong><br>
         ← / → bewegen · ↑ draaien · ↓ sneller omlaag<br>
-        Spatie = direct laten vallen · P = pauze
+        Spatie = direct laten vallen · P = pauze<br>Elk nieuw level wordt merkbaar sneller
       </div>
 
       <div class="mobile-controls">
@@ -374,7 +374,7 @@
       lines += 1;
       rowCount *= 2;
     }
-    level = Math.floor(lines/10)+1;
+    level = Math.floor(lines/8)+1;
   }
 
   function rotate(matrix,dir){
@@ -497,7 +497,7 @@
   }
 
   function getDropInterval(){
-    return Math.max(110,900-(level-1)*70);
+    return Math.max(75,700-(level-1)*85);
   }
 
   function update(time=0){
